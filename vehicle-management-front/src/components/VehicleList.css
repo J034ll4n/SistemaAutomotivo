@@ -1,0 +1,189 @@
+/* VehicleList.css */
+.vehicle-list-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #34495e; /* Fundo mais escuro */
+  padding: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ecf0f1; /* Texto claro */
+  margin-bottom: 40px;
+}
+
+.filter-form {
+  background-color: #2c3e50; /* Fundo escuro para o formulário */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-form label {
+  font-size: 1rem;
+  color: #ecf0f1; /* Cor clara para as labels */
+}
+
+.filter-form input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #7f8c8d; /* Borda cinza clara */
+  width: 200px;
+  background-color: #34495e; /* Fundo escuro */
+  color: #ecf0f1; /* Cor do texto clara */
+}
+
+.filter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #27ae60; /* Cor verde escuro */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.filter-form button:hover {
+  background-color: #2ecc71; /* Verde mais claro para o hover */
+}
+
+.vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.vehicle-card {
+  background-color: #2c3e50; /* Fundo escuro para os cards */
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vehicle-image {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.vehicle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vehicle-info h3 {
+  font-size: 1.5rem;
+  color: #ecf0f1; /* Texto claro */
+}
+
+.vehicle-info p {
+  color: #bdc3c7; /* Cor mais suave para o texto */
+  font-size: 1rem;
+}
+
+.vehicle-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-edit {
+  background-color: #3498db; /* Cor azul */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9; /* Azul mais escuro */
+}
+
+.btn-delete {
+  background-color: #e74c3c; /* Cor vermelha */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b; /* Vermelho mais escuro */
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.445);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos dos botões */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+button:focus {
+  outline: none; /* Remove o contorno ao clicar */
+}
+
+button.edit {
+  background-color: #008CBA; /* Cor para o botão de editar */
+}
+
+button.edit:hover {
+  background-color: #007B9E; /* Cor de fundo do botão de editar ao passar o mouse */
+}
+
+button.delete {
+  background-color: #f44336; /* Cor para o botão de excluir */
+}
+
+button.delete:hover {
+  background-color: #d32f2f; /* Cor de fundo do botão de excluir ao passar o mouse */
+}
+
+/* Estilos do botão quando for clicado */
+button:active {
+  transform: scale(0.98); /* Reduz o tamanho do botão ao clicar */
+}
