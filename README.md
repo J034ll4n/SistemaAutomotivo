@@ -19,7 +19,7 @@ Estrutura do Projeto
 Abaixo está a estrutura padrão do projeto:
 
 bash
-Copiar código
+
 vehicle-management/
 |— backend/
 |   |— src/
@@ -44,19 +44,19 @@ Como Configurar e Iniciar o Projeto
 Primeiro, clone o repositório do GitHub para sua máquina local:
 
 bash
-Copiar código
+
 git clone https://github.com/J034ll4n/SistemaAutomotivo.git
 cd SistemaAutomotivo
 2. Configurar o Banco de Dados
 Crie um banco de dados no MySQL para o projeto. No terminal do MySQL ou em uma interface como o MySQL Workbench, execute:
 
 sql
-Copiar código
+
 CREATE DATABASE vehicle_management;
 Atualize o arquivo application.properties com as credenciais do banco:
 
 properties
-Copiar código
+
 spring.datasource.url=jdbc:mysql://localhost:3306/vehicle_management
 spring.datasource.username=SEU_USUARIO
 spring.datasource.password=SUA_SENHA
@@ -65,13 +65,13 @@ spring.jpa.hibernate.ddl-auto=update
 Entre na pasta backend/ e instale as dependências do Maven:
 
 bash
-Copiar código
+
 cd backend
 mvn clean install
 Inicie a aplicação Spring Boot:
 
 bash
-Copiar código
+
 mvn spring-boot:run
 O back-end ficará disponível em: http://localhost:8080.
 
@@ -79,13 +79,13 @@ O back-end ficará disponível em: http://localhost:8080.
 Entre na pasta frontend/ e instale as dependências do React:
 
 bash
-Copiar código
+
 cd vehicle-management/frontend
 npm install
 Inicie o servidor do React:
 
 bash
-Copiar código
+
 npm start
 O front-end ficará disponível em: http://localhost:3000.
 
@@ -96,7 +96,7 @@ POST /brands: Adiciona uma nova marca.
 Exemplo de corpo da requisição:
 
 json
-Copiar código
+
 {
     "name": "Honda",
     "country": "Japan"
